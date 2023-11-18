@@ -105,3 +105,19 @@ font-style: italic;
 font-weight: 500;
 line-height: normal;
 }
+
+
+.field::placeholder {
+  color: blue;
+}
+
+
+.placeholder-style::placeholder {
+
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 26px; /* 185.714% */
+letter-spacing: 0.25px;
+}

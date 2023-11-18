@@ -11,12 +11,14 @@ interface InputProps {
   id : string;
   value : string; 
   type : string;
+  placeHolder : string; 
+  className : string ; 
 }
-
-const Input: React.FC<InputProps> = ({ width, height, onChange, id, name, value , onBlur, type } ) => {
+ 
+const Input: React.FC<InputProps> = ({ className ,  width, height, onChange, id, name, value , onBlur, type , placeHolder } ) => {
   return (
     <input
-      style={{ width, height, marginTop: '10px' }} onChange={onChange} id={id} name={name} value = {value} onBlur = {onBlur} type = {type}
+      style={{ width, height, marginTop: '10px' }} onChange={onChange} id={id} name={name} value = {value} onBlur = {onBlur} type = {type}  placeholder={placeHolder} className = {className}
     />
   );
 }

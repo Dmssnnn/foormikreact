@@ -29,28 +29,28 @@ const Forma = () => {
         {(props) => (
           <Form>
             <div className='field'>
-              <Input width={"460px"} height='56px' type='text' onChange={props.handleChange} onBlur={props.handleBlur} id='name' name='name' value={props.values.name} />
+              <Input className="placeholder-style" width={"460px"} height='56px' type='text' onChange={props.handleChange} onBlur={props.handleBlur} id='name' name='name' value={props.values.name} placeHolder="First Name"  />
               {props.errors.name && props.touched.name && (
                 <p className='nameErr'>{props.errors.name}</p>
               )}
             </div>
 
-            <div className='field'>
-              <Input width={"460px"} height='56px' type='text' onChange={props.handleChange} onBlur={props.handleBlur} id='surname' name='surname' value={props.values.surname} />
+            <div className='field'> 
+              <Input  className="placeholder-style" width={"460px"} height='56px' type='text' onChange={props.handleChange} onBlur={props.handleBlur} id='surname' name='surname' value={props.values.surname}  placeHolder="Last Name" />
               {props.errors.surname && props.touched.surname && (
                 <p className='nameErr'>{props.errors.surname}</p>
               )}
             </div>
 
             <div className='field'>
-              <Input width={"460px"} height='56px' type="email" onChange={props.handleChange} onBlur={props.handleBlur} id='email' name='email' value={props.values.email} />
+              <Input className="placeholder-style" width={"460px"} height='56px' type="email" onChange={props.handleChange} onBlur={props.handleBlur} id='email' name='email' value={props.values.email} placeHolder="Email Address" />
               {props.errors.email && props.touched.email && (
                 <p className='nameErr'>{props.errors.email}</p>
               )}
             </div>
 
             <div className='field'>
-              <Input width={"460px"} height='56px' type='password' onChange={props.handleChange} onBlur={props.handleBlur} id='password' name='password' value={props.values.password} />
+              <Input className="placeholder-style" width={"460px"} height='56px' type='password' onChange={props.handleChange} onBlur={props.handleBlur} id='password' name='password' value={props.values.password} placeHolder="Password"/>
               {props.errors.password && props.touched.password && (
                 <p className='nameErr'>{props.errors.password}</p>
               )}
