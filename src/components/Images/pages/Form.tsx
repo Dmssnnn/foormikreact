@@ -9,18 +9,18 @@ const Forma = () => {
     name: "",
     surname: "",
     email: "",
-    password: "", // Corrected the name to 'password'
+    password: "", 
   }
 
   const validationSchema = Yup.object({
     name: Yup.string().required("First Name cannot be empty"),
     surname: Yup.string().required("Last Name cannot be empty"),
     email: Yup.string().email("Looks like this is not an email").required("Email cannot be empty"),
-    password: Yup.string().required("Password cannot be empty"), // Corrected the name to 'password'
+    password: Yup.string().required("Password cannot be empty"), 
   })
 
   function handleSubmit(values: any) {
-    // Handle form submission logic here
+   
   }
 
   return (
