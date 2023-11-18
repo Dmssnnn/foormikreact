@@ -127,9 +127,6 @@ letter-spacing: 0.25px;
 @media (max-width:1024px) {
   .container {
     display: flex;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
