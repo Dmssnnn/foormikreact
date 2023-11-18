@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  background-image: url('./components/Images/Background.svg');
+  background-size: cover;
+ background-color: #FF7979; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+.leftSideWrap {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSideWrap h1 {
+  width: 525px;
+  height: 131px;  
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: -0.521px;
+}
+
+.leftSideWrap span {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; 
+  width: 525px;
+}
+
+.container {
+
+  display: flex;
+  width: 1440px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.rightSideWrap {
+  margin-top: 100px;
+}
+
+.rightSideWrap Button {
+  border-radius: 10px;
+  background: #5E54A4;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s all;
+  font-family: Poppins;
+}
+
+.rightSideWrap Button:hover {
+  transition: 0.5s all;
+  color: #FF7979;
+}
+
+.FormWrap {
+  margin-top: 50px;
+  width: 540px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  overflow: auto;
+}
+
+form {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameErr {
+  color: #FF7979;
+text-align: right;
+font-family: Poppins;
+font-size: 11px;
+font-style: italic;
+font-weight: 500;
+line-height: normal;
+}
