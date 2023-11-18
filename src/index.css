@@ -19,7 +19,7 @@ code {
 
 
 .leftSideWrap {
-  width: 50%;
+  width: 720px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,6 +57,7 @@ code {
 }
 
 .rightSideWrap {
+  width: 720px;
   margin-top: 100px;
 }
 
@@ -120,4 +121,41 @@ font-style: normal;
 font-weight: 600;
 line-height: 26px; /* 185.714% */
 letter-spacing: 0.25px;
+}
+
+
+@media (max-width:1024px) {
+  .container {
+    display: flex;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  .FormWrap {
+    display: flex;
+    margin-top: 50px;
+    width: 540px;
+    height: auto;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+.rightSideWrap {
+  width: 720px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.leftSideWrap {
+  margin-top: 300px;
+  text-align: center;
+}
 }
